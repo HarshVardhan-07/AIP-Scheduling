@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIP Scheduling</title>
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+    <h1>AIP Scheduling</h1>
+    <main class="container">
+        <form action="/aipScheduling" method="POST" enctype="multipart/form-data">
+            <span>Enter time Slot (for example 10:00-1030)</span> <br>
+            <label for="timeSlot">Time Slot</label>
+            <input type="text" name="timeslot" id="timeSlot" placeholder="10:00-10:30">
+            <span>Upload Excel Sheet</span> <br>
+            <input type="file" name="facultyRoutine"><br>
+            <input type="submit" value="submit">
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,12 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+.container{
+    display: flex;
+    align-content: center;
+    margin: auto;
+    justify-content: center;
+    
+}
