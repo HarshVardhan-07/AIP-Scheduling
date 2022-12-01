@@ -1,0 +1,24 @@
+
+
+
+table, th, td {
+    border:1px solid black;
+  }
+
+
+.homeButton{
+  text-decoration: none;
+  margin: auto;
+    width:50%;
+    color:white;
+   background-color:#007bff;
+    border: 1px solid #24a0ed;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+}
+
+.tableContent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

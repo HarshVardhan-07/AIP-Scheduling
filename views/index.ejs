@@ -8,15 +8,38 @@
     <link rel="stylesheet" href="style/index.css">
 </head>
 <body>
-    <h1>AIP Scheduling</h1>
+    <nav class="navBar">
+        <img src="images/logo.jpg" alt="Logo" class="logo">
+        <span>AIP Scheduling</span>
+    </nav>
     <main class="container">
         <form action="/aipScheduling" method="POST" enctype="multipart/form-data">
-            <span>Enter time Slot (for example 10:00-1030)</span> <br>
-            <label for="timeSlot">Time Slot</label>
-            <input type="text" name="timeslot" id="timeSlot" placeholder="10:00-10:30">
-            <span>Upload Excel Sheet</span> <br>
-            <input type="file" name="facultyRoutine"><br>
-            <input type="submit" value="submit">
+           
+        <div class="timeInput">
+            <label for="startTime">From</label>
+            <input type="text" name="startTime" id="startTime" placeholder="9:00" required>
+            <label for="endTime">To</label>
+            <input type="text" name="endTime" id="endTime" placeholder="9:30" required>
+        </div>
+        <div class="fileUpload">
+            <span>Upload Excel Sheet (.xlsx format) </span> 
+            <input type="file" name="facultyRoutine" class="uploadButton">
+        </div>
+        <!-- <div class="dayInput">
+            <label for="days">Select Day</label>
+            <select name="days" id="days">
+                <option value="MON">Monday</option>
+                <option value="TUE">Tuesday</option>
+                <option value="WED">Wednesday</option>
+                <option value="THU">Thursday</option>
+                <option value="FRI">Friday</option>
+                <option value="SAT">Saturday</option>
+            </select>
+        </div> -->
+        <div class="dateInput">
+            <input type="date" name="date" id="date">
+        </div>
+            <input type="submit" value="Search" class="submitButton">
         </form>
     </main>
 </body>

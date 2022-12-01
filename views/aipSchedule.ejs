@@ -5,16 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AIP Scheduling</title>
+    <link rel="stylesheet" href="style/result.css">
 </head>
 <body>
-    <h1>Timeslot as per Schedule</h1>
-    <p>Free Slot</p>
+    <h1>Timeslot as per Schedule</h1> <a href="/" class="homeButton">Return to Homepage</a>
+    <!-- <p>Free Slot</p>
+    <p> <%= day %> </p> <span> <%= time %> </span>
     <% for (var i=0 ; i<freeSlot.length; i++) { %>
         <p><%= freeSlot[i] %></p>
-    <%} %> <br> <hr>
-    <p>Filled Slot</p>
-    <% for (var i=0 ; i<filledSlot.length; i++) { %>
-        <p><%= filledSlot[i] %></p>
-    <%} %>
+    <%} %>  -->
+    <main class="tableContent">
+    <table class="table">
+        <caption>AIP Slots</caption>
+        <tr>
+            <th>Day and Time</th>
+            
+        </tr>
+        <tr>
+            <td><%= day %> <%= time %></td>
+        </tr>
+        <th>Faculty Name</th>
+        <% for (var i=0 ; i<freeSlot.length; i++) { %>
+         <tr class="data">
+           <td><%= freeSlot[i] %></td>
+            <%} %> 
+        </tr>
+        
+    </table>
+</main>
+    
+    
 </body>
 </html>
