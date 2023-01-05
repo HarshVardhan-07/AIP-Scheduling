@@ -22,13 +22,14 @@ form{
 }
 .navBar{
     display: flex;
-    align-items: center;
+    align-items:center;
     padding: 0.45rem;
     
 }
+
 .logo{
-    height: 4rem;
-    width: 4rem;
+    height: 5rem;
+    width: 5rem;
 }
 .timeInput{
     display: flex;

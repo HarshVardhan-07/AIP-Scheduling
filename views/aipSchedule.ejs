@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="style/result.css">
 </head>
 <body>
-    <h1>Timeslot as per Schedule</h1> <a href="/" class="homeButton">Return to Homepage</a>
+    <main class="tableContent">
+    <h1>Timeslot as per Schedule</h1> 
     <!-- <p>Free Slot</p>
     <p> <%= day %> </p> <span> <%= time %> </span>
     <% for (var i=0 ; i<freeSlot.length; i++) { %>
         <p><%= freeSlot[i] %></p>
     <%} %>  -->
-    <main class="tableContent">
+    
     <table class="table">
         <caption>AIP Slots</caption>
         <tr>
@@ -27,11 +28,17 @@
         <th>Faculty Name</th>
         <% for (var i=0 ; i<freeSlot.length; i++) { %>
          <tr class="data">
-           <td><%= freeSlot[i] %></td>
+           <td><%= freeSlot[i].name %></td>
+           <% for( var j=0; j<freeSlot[i].slot.length; j++){ %> 
+                <td><%= freeSlot[i].slot[j] %> </td>
+            <%} %>
             <%} %> 
         </tr>
+       
         
     </table>
+    
+    <a href="/" class="homeButton">Return to Homepage</a>
 </main>
     
     

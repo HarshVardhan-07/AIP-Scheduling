@@ -1,15 +1,31 @@
+*{
+ 
+  font-size: 16px;
+}
 
-
-
-table, th, td {
+h1{
+  font-size: 2rem;
+}
+table, th{
+  font-size: 2rem;
+  padding:10px;
+    width: 50%;
     border:1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    
   }
+td, caption{
+  font-size: 1.5rem;
+}
 
 
 .homeButton{
+  font-size: 2rem;
   text-decoration: none;
   margin: auto;
-    width:50%;
+    width:25%;
+    text-align: center;
     color:white;
    background-color:#007bff;
     border: 1px solid #24a0ed;
@@ -19,6 +35,8 @@ table, th, td {
 
 .tableContent{
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  gap: 2rem;
 }
+
